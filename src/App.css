@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #f0f4c3, #ffecb3);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #333;
+}
+
+.App {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.heading {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 700;
+}
+
+.quote {
+  font-size: 24px;
+  color: #777;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.choosefile,
+.uploadfilebutton {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.choosefile {
+  background-color: #ffb74d;
+  color: white;
+}
+
+.uploadfilebutton {
+  background-color: #81c784;
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.thumbnail {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.thumbnail-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.hide-button {
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}

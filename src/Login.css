@@ -1,0 +1,151 @@
+/* Background styling - full screen, responsive */
+.login-background {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center vertically */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* App Title in background */
+.app-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  font-family: 'Georgia', serif;
+}
+
+/* Random quote styling */
+.quote-text {
+  font-size: 18px;
+  color: #f0f0f0;
+  font-style: italic;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+/* Login form card - transparent, centered */
+.login-container {
+  width: 100%;
+  max-width: 380px;
+  padding: 25px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent */
+  backdrop-filter: blur(12px); /* Glass effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Card header */
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #fff;
+}
+
+/* Input fields */
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.login-container input::placeholder {
+  color: #f0f0f0;
+}
+
+.login-container input:focus {
+  border-color: #4285f4; /* Google blue */
+  outline: none;
+  box-shadow: 0 1px 6px rgba(66, 133, 244, 0.3);
+}
+
+/* Main action buttons */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgba(66, 133, 244, 0.85); /* Google blue with transparency */
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(66, 133, 244, 0.4);
+  transition: all 0.3s ease;
+}
+
+.login-container button:hover {
+  background: rgba(52, 103, 204, 0.85);
+  box-shadow: 0 6px 12px rgba(52, 103, 204, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Forgot Password Button */
+.forgot-btn {
+  background: none;
+  border: none;
+  color: #ffcb05;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.forgot-btn:hover {
+  color: #ffd633;
+}
+
+/* Message styling */
+.message {
+  margin-bottom: 12px;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.message:empty {
+  display: none;
+}
+
+/* Toggle between Login/Register */
+.toggle-link {
+  color: #ffcb05;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.toggle-link:hover {
+  color: #ffd633;
+}
